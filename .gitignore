@@ -1,0 +1,8 @@
+_pycache_/
+Divya/
+flask_session/
+pooja/
+py files/
+venv/
+
+This Project is about storing customer information and details like deposite amount, how much installment balance, interest rate, which helps the company to manage every information appropriately and easily.

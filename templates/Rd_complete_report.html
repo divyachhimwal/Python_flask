@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DAILY DEPOSITE TABLE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}">
+<style>
+.back_btnn{
+
+   margin-left:90%;
+   margin-top:20px;
+   width:10%;
+   border:2px solid black;
+   
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color: white;
+}
+</style> 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <!--for demo wrap-->
+ 
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="1">
+      <thead>
+        <tr>
+          <tr>
+  <th>Name</th>
+  <th>Year</th>
+  <th>Installment</th>
+  <th>Deposite</th>
+  <th>Interest</th>
+  <th>Total Amount</th>
+  <th>Maturity Date</th>
+  </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+   <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+  
+  {% for row in acc %}  
+<tr>
+
+  <td>{{row[0]}} </td>
+  <td>{{row[1]}} </td>
+  <td>{{row[2]}}</td>
+  <td>{{row[3]}}</td>
+  <td>{{row[4]}}</td>
+  <td>{{row[5]}}</td>
+  <td>{{row[6]}}</td>
+  
+        
+      
+ 
+  
+ </tbody>
+   {% endfor %}
+    </table><br>
+	<form method=post action="/Recurring_deposit">
+     <input class="back_btnn" type=submit value=Back >
+  </form>
+  </div>
+</section>
+
+<script>
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+</script>
+<!-- partial 
+  <script src= src="{{ url_for('static', filename='js/jquery.min.js') }}"></script><script  src="./script.js"></script>-->
+	<script type="text/javascript">
+window.history.forward();
+function noBack()
+{
+window.history.forward();
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

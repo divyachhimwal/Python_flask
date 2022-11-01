@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Html Table Css Templete</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+  <style>
+  body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    background-color:#006442;
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 0 0 8px black;
+    z-index: -1000;
+    font-style: oblique;
+}
+h1{
+    padding: 10px;
+    margin: 5px 20px;
+}
+.table-section{
+    width: 70%;
+    margin: 0 10% 100px 20%;
+    position: relative;
+    top: 100px;
+    z-index: 1000;
+}
+.table-section thead{
+    font-style: oblique;
+    color: white;
+}
+table{
+    width: 100%;
+}
+th,td{
+    width: 20%;
+    padding: 10px;
+}
+td{
+    text-align: right;
+}
+table,th,td{
+    border: 2px solid #eee;
+    border-collapse: collapse;
+}
+tr:hover{
+background-color: #4DAF7C;
+font-style: oblique;
+font-weight: bold;
+color: white;
+}
+
+.fa-user,.fa-user-circle,.fa-id-card, .fa-phone-alt, .fa-id-badge{
+    float: left !important;
+}
+
+.btnn1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+.back_btnn{
+
+   margin-left:90%;
+   margin-top:20px;
+   width:10%;
+   border:2px solid black;
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+  </style>
+    <div class="header">
+      <h1><i class="fa fa-list-ol"></i> Daily Deposit User Information</h1>
+      
+    </div>
+  </body>
+  <div class="table-section">
+    <table>
+	
+      <thead>
+        <tr>
+           <th>Id</th>
+		   <th>Account Number</th>
+           <th>Name</th>
+           <th>Phone Number</th>
+		   <th>Gender</th>
+           <th>Operation</th>
+        </tr>
+      </thead>
+	   {% for row in ttl %}  
+      <tbody>
+        <tr>
+          <td><i class="fa fa-id-card"></i>{{row[0]}}</td>
+          <td><i class="fas fa-id-badge"></i>{{row[1]}}</td>
+          <td><i class="fa fa-user"></i>{{row[2]}}</td>
+		  <td><i class="fas fa-phone-alt"></i>{{row[6]}}</td>
+		  <td><i class="fas fa-user-circle"></i>{{row[5]}}</td>
+		  
+		  <td><div style="float:left; width: 70px">
+		  <form method=post action="{{url_for('D_deposit',Acc_no=row[1])}} ">
+  <input class="btnn1" type=submit value=Deposit >
+  </form>
+  </div>
+  <div style="float:center; width: 160px "> 
+  <form method=post action="{{url_for('statement',Acc_no=row[1])}} ">
+  <input class="btnn1" type=submit value=Statement >
+  </form>
+  </div>
+  
+  </td>
+  </tr>
+  
+    
+	  {% endfor %}
+    </table>
+	<form method=post action="/deposit_typ ">
+  <input class="back_btnn" type=submit value=Back >
+  </form>
+  </div>
+</html>
+

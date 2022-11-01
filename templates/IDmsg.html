@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+body {
+	background-color: #f6f6ff;
+	font-family: Calibri, Myriad;
+	
+	margin-top: 100px;
+}
+
+#main {
+	width: 780px;
+	padding: 20px;
+	margin: auto;
+}
+
+table.Stcard {
+	margin: auto;
+	width: 600px;
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+}
+
+table.Stcard caption {
+	background-color: #f79646;
+	color: whitesmoke;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+
+
+
+.back_btnn{
+
+   margin-left:78.5%;
+   margin-top:20px;
+   width:10%;
+   border:2px solid black;
+   
+   
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+</style>
+<title>Statement</title>
+</head>
+
+<body>
+
+
+<div id="main">
+<form method = "post">
+
+<table class="Stcard">
+	<caption>{{msg}}{{idd}}</caption>
+	
+</table>
+</form>
+<form method=post action="/Login">
+     <input class="back_btnn" type=submit value=OK >
+  </form>
+</div>
+</body>
+</html>

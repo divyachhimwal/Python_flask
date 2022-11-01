@@ -1,0 +1,538 @@
+<html lang="zxx">
+
+<head>
+	<title>Mudra Khosh</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+	<!-- Bootstrap Core CSS -->
+	<link rel='stylesheet' type='text/css'  href="{{url_for('static', filename='css/bootstrap.css')}}" />
+	<link  rel='stylesheet' type='text/css' href="{{url_for('static', filename='css/style.css')}}" />
+	<!-- font-awesome icons -->
+	<link  rel="stylesheet" href="{{url_for('static',filename='css/fontawesome-all.min.css')}}">
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css//button.css') }}">
+	<!-- //Custom Theme files -->
+	<!-- pop up box -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css//popuo-box.css') }}">
+	<!-- online fonts -->
+	<!-- titles -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- body -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+	<link href= "{{ url_for('static',filename='css/registyle.css') }}" rel= "stylesheet" type= "text/css" />
+	
+
+		<script type="text/javascript">
+          window.history.forward();
+         function noBack()
+          {
+               window.history.forward();
+            }
+          </script>
+		  
+		  <style>
+  .back_btnn{
+
+   margin-left:78.5%;
+   margin-top:20px;
+   width:10%;
+   border:2px solid black;
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color: white;
+
+}
+	
+	</style>
+	
+</head>
+
+<body>
+	
+	<!-- header -->
+	<header>
+	<div class="top">
+			<div class="container">
+				<div class="t-op row">
+					<div class="col-sm-6 top-middle">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 top-left">
+						<ul>
+							<li><i class="fas fa-phone"></i> +021 365 777</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand text-capitalize" href="index.html">
+						सुखद भविष्य म्यूचुअल बेनिफिट निधि लिमिटेड
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center  ml-lg-auto">
+						<li class="nav-item mr-3">
+							<a class="nav-link" href={{url_for('index')}}>Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item  active mr-3">
+							<a class="nav-link" href={{url_for('about')}}>About</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('services')}}>Services</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('gallery')}}>Gallery</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href={{url_for('contact')}}>contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+
+    
+     <form class="signup-form" action={{url_for('profile')}} method="post" enctype="multipart/form-data">
+
+    <!-- form header -->
+    <div class="form-header">
+	<h1>Create Account</h1>
+    </div>
+
+    <!-- form body -->
+    <div class="form-body">
+	<div class="horizontal-group">
+        <div class="form-group left">
+            <label for="firstname" class="label-title">Name</label>
+            <input type="text" id="firstname" name="name" class="form-input" value="{{Nm}}" readonly/>
+        </div>
+        <div class="form-group right">
+            <label for="date" class="label-title">Date of Birth</label>
+            <input type="Date" id="date" name="Dob" class="form-input" placeholder="enter your Dob" required="required"/>
+        </div>
+    </div>
+	<div class="form-group left">
+            <label for="firstname" class="label-title">Account Type</label>
+            <input type="text" id="firstname" name="Acctyp" class="form-input" value="{{Atyp}}" readonly/>
+        </div>
+	<!-- Email -->
+<div class="form-group">
+  <label for="phone" class="label-title">Mobile</label>
+  <input type="text" id="phone" name="mobile" class="form-input" value="{{ph}}" readonly/>
+</div>
+
+<!-- Passwrod and confirm password -->
+
+  <div class="form-group">
+    <label for="occupation" class="label-title">Occupation</label>
+    <input type="text" id="occ" name="occ" class="form-input" placeholder="enter your occupation" value="" required="required">
+  </div>
+
+ 
+
+
+<!-- Gender and Hobbies -->
+
+
+    <div class="form-group ">
+        <label class="label-title">Gender:</label>
+        <div class="input-group">
+            <label for="male">
+                <input type="radio" name="gen" value="Male" id="male"> Male</label>&nbsp&nbsp&nbsp
+            <label for="female">
+                <input type="radio" name="gen" value="Female" id="female"> Female</label>&nbsp&nbsp&nbsp
+			<label for="other">
+                <input type="radio" name="gen" value="Other" id="other"> Other</label>	
+        </div>
+    </div>
+
+    
+
+ <!-- Source of Income and Income Amount -->
+
+
+  <div class="form-group" >
+    <label class="label-title">Select Identity Card</label>
+    <select class="form-input" id="level" name="card">
+	<option value=" " >Please select your Identity Card</option>
+      <option value="Adhar Card">Adhar Card</option>
+      <option value="Pen Card">Pen Card</option>
+      <option value="Ration Card">Ration Card</option>
+	  <option value="Driving License">Driving License</option>
+    </select>
+  </div>
+ 
+ <div class="form-group left">
+    <label for="address" class="label-title">Identity Card no</label>
+    <input type="number" id="add" class="form-input" name="cardno" placeholder="enter your ID card no" value="" required="required">
+  </div> 
+  
+ <div class="form-group left">
+    <label for="address" class="label-title">Address</label>
+    <input type="text" id="add" class="form-input" name="add" placeholder="enter your address" value="" required="required">
+  </div> 
+  
+  <div class="form-group right">
+    <label for="pincode" class="label-title">Pincode</label>
+    <input type="text" id="pin" name="pin" class="form-input" placeholder="enter your Pincode" value="" required="required">
+  </div> 
+ 
+  
+  
+
+ <div class="form-group left">
+    <label for="city" class="label-title">City</label>
+    <input type="text" id="city" name="city" class="form-input" placeholder="enter your City" value="" required="required">
+  </div> 
+  
+  <div class="form-group right">
+    <label for="state" class="label-title">Select Your State</label>
+    <select class="form-input" id="level"  name="state">
+      <option value=" " >Please select your state</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+      <option value="Daman and Diu">Daman and Diu</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Lakshadweep">Lakshadweep</option>
+      <option value="Puducherry">Puducherry</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="West Bengal">West Bengal</option>
+    </select>
+  </div> 
+  
+
+
+ 
+    
+	 <div class="form-footer">
+	 
+	 
+                 <!---<label>New Here?</label>--->
+                <tr><td><input value="submit" type="submit" class="btn"></td></tr>
+				</div>
+                </form>
+				 <form method=post action="/admin_show_profile"> 
+     <input class="back_btnn" type=submit value=Back >
+	 
+  </form>
+</div>
+</div>
+</div>
+<footer>
+		<div class="container py-md-4 mt-md-3">
+			<div class="row footer-top-w3layouts-agile py-5">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div>
+					<div class="footer-text">
+						<p>The objective of Sukhd Bhavishya Mutual Benefit Nidhi Limited Company is to provide ambitious and all facilities to its members at affordable rates...</p>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Contact Us</h3>
+					</div>
+					<div class="footer-office-hour">
+						<ul>
+							<li class="hd">Address :</li>
+							<li>No.27 - 5549436 street xxxxx, Chinyalisor, Uttarkashi</li>
+
+						</ul>
+						<ul>
+							<li class="hd">Phone:+ 1 (234) 567 8901</li>
+							<li class="hd">Email:
+								<a href="mailto:info@example.com">info@example.com</a>
+							</li>
+							<li class="hd">Fax: 1(234) 567 8901</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Recent Posts</h3>
+					</div>
+					<div class="footer-list">
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g1.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft1.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g2.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft2.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g3.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft7.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g4.jpg"class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft3.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g5.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft4.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g6.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft8.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g7.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft5.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g9.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft6.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g8.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/ft9.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Subscribe</h3>
+					</div>
+					<p>Vivamus magna justo, lacinia eget consectetur sed.</p>
+					<form action="#" method="post" class="newsletter">
+						<input class="email" type="email" placeholder="Your email..." required="">
+						<button class="btn1">
+							<i class="far fa-envelope"></i>slider"						</button>
+					</form>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---->
+	<div class="copyright py-3">
+		<div class="container">
+			<div class="copyrighttop">
+				<ul>
+					<li>
+						<h4>Follow us on:</h4>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-pinterest-p"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyrightbottom">
+				<p>© 2022 financial. All Rights Reserved | Design by
+					<a href="http://w3layouts.com/">W3layouts</a>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Home Loan</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		 <div class="agileits-w3layouts-info">
+			<!--<img src="../images/g6.jpg" class="img-fluid" alt="" />-->
+			<img src="{{url_for('static',filename = 'images/g6.jpg')}}" >
+
+			<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. </p>
+		</div>
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal -->
+<!-- js-->
+	<!--<script src="js/jquery-2.2.3.min.js"></script>-->
+	         <script  src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+<!-- js-->
+<!-- Banner Responsiveslides -->
+	<!--<script src="js/responsiveslides.min.js"></script>-->
+		         <script src="{{ url_for('static', filename='js/responsiveslides.min.js') }}"></script>
+
+	
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+<!-- // Banner Responsiveslides -->
+<!-- stats -->
+	<!--<script src="js/jquery.waypoints.min.js"></script>-->
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+	<!--<script src="js/jquery.countup.js"></script>-->
+		<script src="{{url_for('static', filename='js/jquery.countup.js')}}"></script>
+
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+<!--pop-up-box -->
+	<!--<script src="js/jquery.magnific-popup.js"></script>-->
+			<script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<!-- //pop-up-box -->
+	<!-- Bootstrap Core JavaScript -->
+	<!--<script src="js/bootstrap.js ">-->
+	<script src="{{url_for('static', filename='js/bootstrap.js ')}}"></script>
+
+	
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+
+</body>
+</html>
+
+
+	
+  
+    

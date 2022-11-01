@@ -1,0 +1,11 @@
+.back_btnn{
+
+   margin-left:90%;
+   margin-top:20px;
+   width:10%;
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color: white;
+}

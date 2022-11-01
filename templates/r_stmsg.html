@@ -1,0 +1,459 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML CSS Login Form</title>
+    <!--<link rel="stylesheet" href="C:\\Users\\Pooja\\Desktop\\Project\\flaskkkkk\\static\\styles\\registyle.css">-->
+	<link href= "{{ url_for('static',filename='css/registyle.css') }}" rel= "stylesheet" type= "text/css" />
+	
+	
+
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	
+	 <meta charset="utf-8">
+    <title>Register Form Start</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css')}}">
+	<!--<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css//style.css') }}">
+	<!--<link href="../static/css/style.css" rel='stylesheet' type='text/css' />-->
+	<!-- pop up box -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css//popuo-box.css') }}">
+
+	<!--<link href="../static/css/popuo-box.css"rel="stylesheet" type="text/css" media="all" />-->
+	<!-- font-awesome icons -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css//main.min.css') }}">
+
+	<!--<link href="../static/css/main.min.css" rel="stylesheet">-->
+	<!-- //Custom Theme files -->
+	<!-- online fonts -->
+	<!-- titles -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- body -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+	
+		<script type="text/javascript">
+window.history.forward();
+function noBack()
+{
+window.history.forward();
+}
+</script>
+<style>
+body {
+	background-color: #f6f6ff;
+	font-family: Calibri, Myriad;
+}
+
+#main {
+	width: 780px;
+	padding: 20px;
+	margin: auto;
+}
+
+table.Stcard {
+	margin-top:50px;
+	width: 600px;
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+}
+
+table.Stcard caption {
+	background-color: #f79646;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .3em;
+}
+
+table.Stcard thead th {
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+}
+
+table.Stcard thead th#thDay {
+	width: 25%;	
+}
+
+table.Stcard thead th#thRegular, table.Stcard thead th#thOvertime, table.Stcard thead th#thTotal {
+	width: 40%;
+}
+
+table.Stcard th, table.Stcard td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table.Stcard td {
+	text-align: right;
+}
+
+table.Stcard tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.Stcard tfoot {
+	font-weight: bold;
+	font-size: large;
+	background-color: #687886;
+	color: #fff;
+}
+
+table.Stcard tr.even {
+	background-color: #fde9d9;
+}
+
+.back_btnn{
+
+   margin-left:78.5%;
+   margin-top:20px;
+   width:10%;
+   border:2px solid black;
+   
+}
+
+.back_btnn:hover {
+  background-color: #f44336;
+  color:white; 
+
+</style>
+<title>Statement</title>
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+window.history.forward();
+function noBack()
+{
+window.history.forward();
+}
+</script>
+	
+  <!-- header -->
+	<header>
+	<div class="top">
+			<div class="container">
+				<div class="t-op row">
+					<div class="col-sm-6 top-middle">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 top-left">
+						<ul>
+							<li><i class="fas fa-phone"></i> +021 365 777</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand text-capitalize" href="index.html">
+					<b>सुखद भविष्य म्यूचुअल बेनिफिट निधि लिमिटेड</b>
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center  ml-lg-auto">
+						<li class="nav-item active  mr-3">
+							<a class="nav-link" href={{url_for('index')}}>Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('about')}}>About</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('services')}}>Services</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('gallery')}}>Gallery</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href={{url_for('admin')}}>Admin Login</a>
+						</li>
+						<!--<li class="nav-item dropdown mr-3">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								User Login
+							</a>
+							<!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<!--<a class="dropdown-item" href={{url_for('typography')}}> Typography</a>
+								<a class="dropdown-item" href={{url_for('gallery')}}>Gallery</a>
+								<a class="dropdown-item" href={{url_for('Login')}}>Login</a>
+							</div>
+						</li>-->
+						<li class="nav-item">
+							<a class="nav-link" href={{url_for('contact')}}>contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+
+<div id="main">
+<form method = "post">
+
+<table class="Stcard">
+	<caption></caption>
+	<thead>
+	
+		<tr>
+			<th>Name</th>
+			<th>Installment</th>
+			<th>Deposit Amount</th>
+			<th>Total Amount</th>
+			
+		</tr>
+		
+	</thead>
+	
+	   
+		
+
+     <tbody class="odd">
+	    
+		 <tr><td colspan="6" style="color:Red ; align:center-left ; font-size:50px"><strong> There is No Statement </strong></td></tr>
+	
+	</tbody>
+			   
+		
+	
+	<tfoot>
+		<tr>
+			   
+			   </tr>
+	</tfoot>
+</table>
+</form>
+<form method=post action="/Recurring_deposit">
+     <input class="back_btnn" type=submit value=Back >
+  </form>
+</div>
+ <!--footer-->
+	<footer>
+		<div class="container py-md-4 mt-md-3">
+			<div class="row footer-top-w3layouts-agile py-5">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div>
+					<div class="footer-text">
+						<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Contact Us</h3>
+					</div>
+					<div class="footer-office-hour">
+						<ul>
+							<li class="hd">Address :</li>
+							<li>No.27 - 5549436 street lorem, Newyork City, USA</li>
+
+						</ul>
+						<ul>
+							<li class="hd">Phone:+ 1 (234) 567 8901</li>
+							<li class="hd">Email:
+								<a href="mailto:info@example.com">info@example.com</a>
+							</li>
+							<li class="hd">Fax: 1(234) 567 8901</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Recent Posts</h3>
+					</div>
+					<div class="footer-list">
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g1.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g1.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g2.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g2.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g3.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g33.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g4.jpg"class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g4.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g5.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g5.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g6.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g66.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g7.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g77.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g9.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g9.jpg')}}" >
+
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="#" data-toggle="modal" data-target="#myModal">
+								<!--<img src="../images/g8.jpg" class="img-fluid" alt=" ">-->
+								<img src="{{url_for('static',filename = 'images/g88.jpg')}}" >
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+					<div class="footer-title">
+						<h3>Subscribe</h3>
+					</div>
+					<p>Vivamus magna justo, lacinia eget consectetur sed.</p>
+					<form action="#" method="post" class="newsletter">
+						<input class="email" type="email" placeholder="Your email..." required="">
+						<button class="btn1">
+							<i class="far fa-envelope"></i>
+						</button>
+					</form>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---->
+	<div class="copyright py-3">
+		<div class="container">
+			<div class="copyrighttop">
+				<ul>
+					<li>
+						<h4>Follow us on:</h4>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-pinterest-p"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyrightbottom">
+				<p>© 2018 Home Loan. All Rights Reserved | Design by
+					<a href="http://w3layouts.com/">W3layouts</a>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Home Loan</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		 <div class="agileits-w3layouts-info">
+			<img src="{{url_for('static',filename = 'images/g6.jpg')}}" class="img-fluid" alt="" />
+			<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. </p>
+		</div>
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal -->
+<!-- js-->
+	<script src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+<!-- js-->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="{{ url_for('static', filename='js/bootstrap.js') }}">
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+</body>
+</html>
+
